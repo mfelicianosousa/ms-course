@@ -40,6 +40,15 @@ public class WorkerResource {
 	@GetMapping(value="{id}")
 	public ResponseEntity< Worker > findById(@PathVariable Long id ){
 		
+		/*
+		try {
+			
+			 Thread.sleep(1000L);
+		} catch (InterruptedException e ) {
+			e.printStackTrace();
+		}
+		*/
+		
 		/* imprime a port no console do log do spring  */
 		logger.info("PORT = "+env.getProperty("local.server.port"));
 		
